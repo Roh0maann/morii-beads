@@ -5,7 +5,7 @@ export default function HeroSection() {
     <section className="px-4 md:px-8 max-w-7xl mx-auto mt-8 md:mt-12 mb-12 md:mb-16">
       {/* Main Container - The L-Shape Illusion */}
       <div className="relative w-full h-[550px] md:h-[600px] rounded-[2rem] overflow-hidden bg-stone-100">
-        
+
         {/* Full Background Image */}
         <Image
           src="/images/hero_beads.png"
@@ -26,7 +26,7 @@ export default function HeroSection() {
           <h1 className="font-sans text-[clamp(3rem,6vw,5.5rem)] leading-[1.05] tracking-tight text-white mb-8">
             The Curated <br /> Keepsake
           </h1>
-          
+
           <div className="flex items-center gap-8 md:gap-12">
             <a href="#" className="group flex items-center gap-2 text-white text-[13px] font-bold tracking-[0.1em] uppercase border-b border-white/30 pb-2 hover:border-white transition">
               Explore Gallery
@@ -71,20 +71,20 @@ export default function HeroSection() {
 
         {/* BOTTOM RIGHT: The White Cutout Block (Stats) */}
         <div className="absolute bottom-0 right-0 w-full md:w-[65%] bg-white rounded-t-[2rem] md:rounded-tl-[3rem] md:rounded-tr-none p-6 md:p-8 z-10">
-           <div className="grid grid-cols-3 gap-2 md:gap-4 divide-x divide-stone-200">
-              <div className="flex flex-col justify-center px-4 md:px-6">
-                <span className="font-sans text-3xl md:text-4xl text-[#2B2724] mb-1 tracking-tight">500+</span>
-                <span className="text-stone-500 text-[10px] md:text-xs leading-snug">Artisan pieces handcrafted</span>
-              </div>
-              <div className="flex flex-col justify-center px-4 md:px-6">
-                <span className="font-sans text-3xl md:text-4xl text-[#2B2724] mb-1 tracking-tight">24</span>
-                <span className="text-stone-500 text-[10px] md:text-xs leading-snug">Master craftsmen in Bali</span>
-              </div>
-              <div className="flex flex-col justify-center px-4 md:px-6">
-                <span className="font-sans text-3xl md:text-4xl text-[#2B2724] mb-1 tracking-tight">100%</span>
-                <span className="text-stone-500 text-[10px] md:text-xs leading-snug">Sourced & created locally</span>
-              </div>
-           </div>
+          <div className="grid grid-cols-3 gap-2 md:gap-4 divide-x divide-stone-200">
+            <div className="flex flex-col justify-center px-4 md:px-6">
+              <span className="font-sans text-3xl md:text-4xl text-[#2B2724] mb-1 tracking-tight">500+</span>
+              <span className="text-stone-500 text-[10px] md:text-xs leading-snug">Artisan pieces handcrafted</span>
+            </div>
+            <div className="flex flex-col justify-center px-4 md:px-6">
+              <span className="font-sans text-3xl md:text-4xl text-[#2B2724] mb-1 tracking-tight">24</span>
+              <span className="text-stone-500 text-[10px] md:text-xs leading-snug">Master craftsmen in Bali</span>
+            </div>
+            <div className="flex flex-col justify-center px-4 md:px-6">
+              <span className="font-sans text-3xl md:text-4xl text-[#2B2724] mb-1 tracking-tight">100%</span>
+              <span className="text-stone-500 text-[10px] md:text-xs leading-snug">Sourced & created locally</span>
+            </div>
+          </div>
         </div>
 
       </div>

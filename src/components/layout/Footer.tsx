@@ -65,9 +65,9 @@ export default function Footer() {
                 Subscribe to receive early access to new collections, exclusive releases, and dispatches from our Balinese workshop.
               </p>
               <form className="flex border-b border-stone-300 pb-2">
-                <input 
-                  type="email" 
-                  placeholder="Email Address" 
+                <input
+                  type="email"
+                  placeholder="Email Address"
                   className="w-full bg-transparent text-sm text-stone-800 placeholder-stone-400 focus:outline-none"
                 />
                 <button type="submit" className="text-[10px] font-bold tracking-[0.2em] uppercase text-stone-800 hover:text-stone-500 transition ml-4">
