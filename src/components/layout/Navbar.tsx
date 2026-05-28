@@ -1,6 +1,17 @@
+"use client";
+
 import Link from "next/link";
+import { useCart } from "@/context/CartContext";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
+  const { cartCount, setIsCartOpen } = useCart();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   return (
     <nav className="sticky top-0 w-full bg-[#FAF9F6]/90 backdrop-blur-md z-50 border-b border-stone-200/50">
       <div className="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
@@ -26,8 +37,9 @@ export default function Navbar() {
         </div>
         <div className="flex items-center space-x-6 text-stone-600">
           <button
+            onClick={() => setIsCartOpen(true)}
             aria-label="Shopping Bag"
-            className="p-2 hover:text-stone-900 transition"
+            className="p-2 hover:text-stone-900 transition relative"
           >
             <svg
               width="20"
@@ -43,6 +55,11 @@ export default function Navbar() {
               <line x1="3" y1="6" x2="21" y2="6"></line>
               <path d="M16 10a4 4 0 0 1-8 0"></path>
             </svg>
+            {mounted && cartCount > 0 && (
+              <span className="absolute top-0 right-0 inline-flex items-center justify-center w-4 h-4 text-[10px] font-bold text-white bg-red-500 rounded-full">
+                {cartCount}
+              </span>
+            )}
           </button>
           <button
             aria-label="User Profile"

@@ -3,6 +3,8 @@ import { Plus_Jakarta_Sans, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { CartProvider } from "@/context/CartContext";
+import CartSidebar from "@/components/cart/CartSidebar";
 
 const jakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
@@ -30,9 +32,12 @@ export default function RootLayout({
       className={`${jakarta.variable} ${playfair.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans text-stone-800 bg-white selection:bg-stone-800 selection:text-white">
-        <Navbar />
-        {children}
-        <Footer />
+        <CartProvider>
+          <Navbar />
+          <CartSidebar />
+          {children}
+          <Footer />
+        </CartProvider>
       </body>
     </html>
   );

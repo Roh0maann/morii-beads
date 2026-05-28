@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useCart } from "@/context/CartContext";
 
 const WHATSAPP_NUMBER = "6281234567890"; // Dummy number
 
@@ -24,9 +25,17 @@ export default function CollectionsPage() {
     setOpenSection(openSection === section ? null : section);
   };
 
-  const getWhatsAppLink = (productName: string, price: string) => {
-    const message = `Hello Morii Beads, I am interested in purchasing the ${productName} (${price}). Is it available?`;
-    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+  const { addToCart } = useCart();
+
+  const handleAddToCart = (e: React.MouseEvent, product: any) => {
+    e.preventDefault();
+    addToCart({
+      id: product.id,
+      name: product.name,
+      priceNumeric: product.priceNumeric,
+      priceFormatted: product.priceFormatted,
+      image: product.image,
+    });
   };
 
   const filteredAndSortedProducts = useMemo(() => {
@@ -217,13 +226,7 @@ export default function CollectionsPage() {
             ) : (
               <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-4 md:gap-x-8 gap-y-12 md:gap-y-16">
                 {filteredAndSortedProducts.map((product) => (
-                  <a
-                    key={product.id}
-                    href={getWhatsAppLink(product.name, product.priceFormatted)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group block"
-                  >
+                  <div key={product.id} className="group block relative">
                     {/* Image Container */}
                     <div className="relative aspect-[3/4] bg-[#EBE9E4] mb-6 overflow-hidden flex items-center justify-center">
                       <Image
@@ -234,11 +237,14 @@ export default function CollectionsPage() {
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       />
                       
-                      {/* Hover Overlay WhatsApp Button */}
+                      {/* Hover Overlay Add to Cart Button */}
                       <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-end pb-8">
-                         <span className="bg-[#2B2724] text-white text-xs font-bold uppercase tracking-[0.15em] px-6 py-3 hover:bg-black transition-colors">
-                           Inquire via WA
-                         </span>
+                         <button 
+                           onClick={(e) => handleAddToCart(e, product)}
+                           className="bg-[#2B2724] text-white text-xs font-bold uppercase tracking-[0.15em] px-6 py-3 hover:bg-black transition-colors"
+                         >
+                           Add to Bag
+                         </button>
                       </div>
                     </div>
 
@@ -254,7 +260,7 @@ export default function CollectionsPage() {
                         {product.priceFormatted}
                       </p>
                     </div>
-                  </a>
+                  </div>
                 ))}
               </div>
             )}
