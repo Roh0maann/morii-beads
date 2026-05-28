@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="w-full bg-[#FAF9F6]">
-      <div className="flex justify-between items-center px-8 py-8 max-w-7xl mx-auto">
+    <nav className="sticky top-0 w-full bg-[#FAF9F6]/90 backdrop-blur-md z-50 border-b border-stone-200/50">
+      <div className="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
         <div className="font-serif text-2xl font-bold tracking-tight text-[#8A634B]">
           Morii Beads
         </div>
