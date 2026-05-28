@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function CollectionsSection() {
   return (
-    <section className="px-8 max-w-7xl mx-auto py-32">
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
+    <section className="px-4 md:px-8 max-w-7xl mx-auto pt-12 md:pt-16 pb-32">
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-16 gap-6">
         <div className="space-y-3">
-          <h2 className="font-serif text-[clamp(2rem,3.5vw+1rem,3rem)] leading-[1.15] text-[#8b654b]">
+          <h2 className="font-sans text-[clamp(2rem,3.5vw+1rem,3rem)] leading-[1.15] text-[#2B2724]">
             Curated Collections
           </h2>
           <p className="text-stone-600 text-xl leading-[1.5]">
@@ -14,8 +14,8 @@ export default function CollectionsSection() {
           </p>
         </div>
         <Link
-          href="#"
-          className="border-b border-stone-800 pb-1 text-stone-800 hover:text-[#8b654b] hover:border-[#8b654b] transition font-medium tracking-wide"
+          href="/collections"
+          className="border-b border-stone-800 pb-1 text-stone-800 hover:text-stone-500 hover:border-stone-500 transition font-medium tracking-wide"
         >
           View All Works
         </Link>
@@ -33,7 +33,7 @@ export default function CollectionsSection() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
           <div className="absolute bottom-10 left-10 text-white">
-            <h3 className="font-serif text-[clamp(1.75rem,2.5vw+0.5rem,2.25rem)] leading-[1.15] mb-2">
+            <h3 className="font-sans text-[clamp(1.75rem,2.5vw+0.5rem,2.25rem)] leading-[1.15] mb-2">
               Handmade Necklaces
             </h3>
             <p className="text-[13px] tracking-[0.15em] uppercase text-white/90 font-medium">
@@ -54,7 +54,7 @@ export default function CollectionsSection() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
             <div className="absolute bottom-10 left-10 text-white">
-              <h3 className="font-serif text-[clamp(1.75rem,2.5vw+0.5rem,2.25rem)] leading-[1.15] mb-2">
+              <h3 className="font-sans text-[clamp(1.75rem,2.5vw+0.5rem,2.25rem)] leading-[1.15] mb-2">
                 Amur Jin Bracelets
               </h3>
             </div>
@@ -69,7 +69,7 @@ export default function CollectionsSection() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
             <div className="absolute bottom-10 left-10 text-white">
-              <h3 className="font-serif text-[clamp(1.75rem,2.5vw+0.5rem,2.25rem)] leading-[1.15] mb-2">
+              <h3 className="font-sans text-[clamp(1.75rem,2.5vw+0.5rem,2.25rem)] leading-[1.15] mb-2">
                 Unique Rings
               </h3>
               <p className="text-[13px] tracking-[0.15em] uppercase text-white/90 font-medium">

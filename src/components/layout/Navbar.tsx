@@ -6,22 +6,22 @@ export default function Navbar() {
       <div className="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
         <Link
           href="/"
-          className="font-serif text-2xl font-bold tracking-tight text-[#8A634B] hover:opacity-80 transition"
+          className="font-sans text-2xl font-bold tracking-tight text-[#2B2724] hover:opacity-80 transition"
         >
           Morii Beads
         </Link>
         <div className="hidden md:flex space-x-10 text-[13px] uppercase tracking-[0.12em] text-stone-600 font-semibold">
-          <Link href="#" className="hover:text-stone-800 transition">
+          <Link href="/collections" className="hover:text-stone-800 transition">
             Collections
+          </Link>
+          <Link href="#" className="hover:text-stone-800 transition">
+            The Atelier
           </Link>
           <Link href="#" className="hover:text-stone-800 transition">
             Our Story
           </Link>
           <Link href="#" className="hover:text-stone-800 transition">
-            Artisanal Process
-          </Link>
-          <Link href="#" className="hover:text-stone-800 transition">
-            Sustainability
+            Journal
           </Link>
         </div>
         <div className="flex items-center space-x-6 text-stone-600">

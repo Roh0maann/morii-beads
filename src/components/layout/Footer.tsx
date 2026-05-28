@@ -3,175 +3,119 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#FAF9F6]">
+    <footer className="bg-white">
       <div className="max-w-7xl mx-auto px-8 py-24 border-t border-stone-200">
-        <div className="grid md:grid-cols-[1fr_1.5fr] gap-16 mb-24 items-center">
-          <div className="space-y-12">
-            <div className="space-y-3">
-              <h3 className="text-[13px] font-bold tracking-[0.15em] uppercase text-stone-500">
-                Visit Us
-              </h3>
-              <h2 className="font-serif text-[clamp(1.75rem,2.5vw+0.5rem,2.25rem)] leading-[1.2] text-[#8b654b]">
-                The Atelier Experience
-              </h2>
-            </div>
-
-            <div className="space-y-8">
-              <div className="flex gap-5">
-                <div className="mt-1 text-[#8b654b]">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                    <circle cx="12" cy="10" r="3"></circle>
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="font-bold text-stone-800 text-lg leading-[1.3] mb-1">
-                    Denpasar, Bali
-                  </h4>
-                  <p className="text-stone-500 leading-[1.6]">
-                    Jl. Raya Seminyak No. 45, North Kuta
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-5">
-                <div className="mt-1 text-[#8b654b]">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <polyline points="12 6 12 12 16 14"></polyline>
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="font-bold text-stone-800 text-lg leading-[1.3] mb-1">
-                    Weekend Hours
-                  </h4>
-                  <p className="text-stone-500 leading-[1.6] mb-2">
-                    Saturday - Sunday: 10:00 - 18:00
-                  </p>
-                  <p className="text-stone-500 text-sm italic">
-                    *Weekdays by Private Appointment Only
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="relative h-[450px] w-full rounded-3xl overflow-hidden shadow-xl">
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-24 mb-32 items-center">
+          {/* Modern Clean Image Container */}
+          <div className="order-2 md:order-1 relative aspect-[4/5] md:aspect-[4/3] w-full rounded-[2rem] overflow-hidden shadow-2xl bg-stone-100">
             <Image
-              src="/images/bali_atelier.png"
+              src="/images/atelier_editorial.png"
               alt="Atelier Experience"
               fill
               className="object-cover"
-              sizes="(max-width: 768px) 100vw, 60vw"
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
+          </div>
+
+          {/* Minimalist Text Block */}
+          <div className="order-1 md:order-2 space-y-16">
+            <div className="space-y-6">
+              <span className="inline-block bg-[#2B2724] text-white px-3 py-1.5 text-[10px] font-bold tracking-[0.2em] uppercase">
+                Visit The House
+              </span>
+              <h2 className="font-sans text-5xl lg:text-6xl text-[#2B2724] leading-[1.05] tracking-tight">
+                The Atelier <br />
+                <span className="text-stone-400 font-light">Experience</span>
+              </h2>
+              <p className="text-stone-600 leading-relaxed max-w-md pt-4">
+                Step into our sanctuary. Witness the transformation of raw stone into curated keepsakes, guided by the hands of Balinese artisans.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 gap-8 pt-8 border-t border-stone-200">
+              <div className="space-y-2">
+                <h4 className="text-[10px] font-bold tracking-[0.15em] uppercase text-stone-800">
+                  Location
+                </h4>
+                <p className="text-sm text-stone-500 leading-[1.6]">
+                  Denpasar, Bali <br />
+                  Jl. Raya Seminyak No. 45
+                </p>
+              </div>
+
+              <div className="space-y-2">
+                <h4 className="text-[10px] font-bold tracking-[0.15em] uppercase text-stone-800">
+                  Hours
+                </h4>
+                <p className="text-sm text-stone-500 leading-[1.6]">
+                  Sat - Sun: 10:00 - 18:00 <br />
+                  <span className="italic text-stone-400">*Appt. Only on Weekdays</span>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="pt-12 border-t border-stone-200 flex flex-col lg:flex-row justify-between items-start lg:items-end gap-12">
-          <div className="max-w-xs space-y-4">
-            <Link
-              href="/"
-              className="font-serif text-2xl font-bold text-[#8A634B] hover:opacity-80 transition block"
-            >
-              Morii Beads
-            </Link>
-            <p className="text-[15px] text-stone-500 leading-[1.6]">
-              Preserving the soul of handmade jewelry through intentional design
-              and Balinese craftsmanship.
-            </p>
+        <div className="pt-24 border-t border-stone-200">
+          <div className="flex flex-col lg:flex-row justify-between items-start gap-16 mb-32">
+            {/* Left: Newsletter */}
+            <div className="w-full max-w-md space-y-8">
+              <h3 className="font-sans text-3xl text-[#2B2724]">Join the Atelier</h3>
+              <p className="text-stone-500 text-sm leading-relaxed">
+                Subscribe to receive early access to new collections, exclusive releases, and dispatches from our Balinese workshop.
+              </p>
+              <form className="flex border-b border-stone-300 pb-2">
+                <input 
+                  type="email" 
+                  placeholder="Email Address" 
+                  className="w-full bg-transparent text-sm text-stone-800 placeholder-stone-400 focus:outline-none"
+                />
+                <button type="submit" className="text-[10px] font-bold tracking-[0.2em] uppercase text-stone-800 hover:text-stone-500 transition ml-4">
+                  Submit
+                </button>
+              </form>
+            </div>
+
+            {/* Right: Navigation Columns */}
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-12 md:gap-24">
+              <div className="space-y-6">
+                <h4 className="text-[10px] font-bold tracking-[0.2em] uppercase text-stone-400">Explore</h4>
+                <div className="flex flex-col gap-3 text-sm text-stone-600 font-medium">
+                  <Link href="/collections" className="hover:text-stone-900 transition">Collections</Link>
+                  <Link href="#" className="hover:text-stone-900 transition">The Atelier</Link>
+                  <Link href="#" className="hover:text-stone-900 transition">Our Story</Link>
+                </div>
+              </div>
+
+              <div className="space-y-6">
+                <h4 className="text-[10px] font-bold tracking-[0.2em] uppercase text-stone-400">Support</h4>
+                <div className="flex flex-col gap-3 text-sm text-stone-600 font-medium">
+                  <Link href="#" className="hover:text-stone-900 transition">Care Guide</Link>
+                  <Link href="#" className="hover:text-stone-900 transition">Shipping & Returns</Link>
+                  <Link href="#" className="hover:text-stone-900 transition">Contact Us</Link>
+                </div>
+              </div>
+
+              <div className="space-y-6 col-span-2 md:col-span-1">
+                <h4 className="text-[10px] font-bold tracking-[0.2em] uppercase text-stone-400">Social</h4>
+                <div className="flex flex-col gap-3 text-sm text-stone-600 font-medium">
+                  <a href="#" className="hover:text-stone-900 transition">Instagram</a>
+                  <a href="#" className="hover:text-stone-900 transition">Pinterest</a>
+                  <a href="#" className="hover:text-stone-900 transition">Journal</a>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className="flex gap-16 text-[15px] text-stone-600 font-medium">
-            <div className="flex flex-col gap-4">
-              <Link href="#" className="hover:text-stone-900 transition">
-                Find retailers
-              </Link>
-              <Link href="#" className="hover:text-stone-900 transition">
-                Sustainability & Ethos
-              </Link>
+          {/* Massive Typography Footer Logo */}
+          <div className="flex flex-col items-center border-t border-stone-200 pt-8 mt-12">
+            <h1 className="font-sans text-[12vw] leading-none text-[#2B2724] tracking-tighter w-full text-center select-none opacity-90 mb-4">
+              MORII BEADS
+            </h1>
+            <div className="w-full flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-[0.1em] text-stone-400">
+              <span>© 2024 Morii Beads Studio.</span>
+              <span>All Rights Reserved. Denpasar, Bali.</span>
             </div>
-            <div className="flex flex-col gap-4">
-              <Link href="#" className="hover:text-stone-900 transition">
-                Care Guide
-              </Link>
-              <Link href="#" className="hover:text-stone-900 transition">
-                Wholesale
-              </Link>
-            </div>
-          </div>
-
-          <div className="flex flex-col items-end space-y-6">
-            <div className="flex gap-6 justify-end text-stone-400">
-              <Link href="#" className="hover:text-stone-800 transition p-1">
-                <span className="sr-only">Facebook</span>
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                </svg>
-              </Link>
-              <Link href="#" className="hover:text-stone-800 transition p-1">
-                <span className="sr-only">Instagram</span>
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                </svg>
-              </Link>
-              <Link href="#" className="hover:text-stone-800 transition p-1">
-                <span className="sr-only">Mail</span>
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                  <polyline points="22,6 12,13 2,6"></polyline>
-                </svg>
-              </Link>
-            </div>
-            <p className="text-xs text-stone-500">
-              © 2024 Morii Beads | Denpasar, Bali. Weekend Hours: 10AM - 6PM.
-            </p>
           </div>
         </div>
       </div>

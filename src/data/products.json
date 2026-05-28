@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Pearls of Silence Necklace",
+    "brand": "MORII BEADS",
+    "priceFormatted": "IDR 3,180,000",
+    "priceNumeric": 3180000,
+    "image": "/images/necklace_macrame.png",
+    "category": "Necklaces",
+    "material": "Macrame",
+    "dateAdded": 1717000000
+  },
+  {
+    "id": 2,
+    "name": "Amur Jin Bracelet Stack",
+    "brand": "MORII BEADS",
+    "priceFormatted": "IDR 2,480,000",
+    "priceNumeric": 2480000,
+    "image": "/images/bracelets_stack.png",
+    "category": "Bracelets",
+    "material": "Sandalwood",
+    "dateAdded": 1716000000
+  },
+  {
+    "id": 3,
+    "name": "Verity Gold Ring Set",
+    "brand": "MORII BEADS",
+    "priceFormatted": "IDR 4,280,000",
+    "priceNumeric": 4280000,
+    "image": "/images/ring_jewelry.png",
+    "category": "Rings",
+    "material": "Gold",
+    "dateAdded": 1715000000
+  },
+  {
+    "id": 4,
+    "name": "Obsidian Macrame Choker",
+    "brand": "THE ATELIER",
+    "priceFormatted": "IDR 2,150,000",
+    "priceNumeric": 2150000,
+    "image": "/images/necklace_macrame.png",
+    "category": "Necklaces",
+    "material": "Obsidian",
+    "dateAdded": 1718000000
+  },
+  {
+    "id": 5,
+    "name": "Riverstone Duo Bracelet",
+    "brand": "MORII BEADS",
+    "priceFormatted": "IDR 1,850,000",
+    "priceNumeric": 1850000,
+    "image": "/images/bracelets_stack.png",
+    "category": "Bracelets",
+    "material": "Riverstone",
+    "dateAdded": 1714000000
+  },
+  {
+    "id": 6,
+    "name": "Volcanic Ash Signet Ring",
+    "brand": "THE ATELIER",
+    "priceFormatted": "IDR 3,600,000",
+    "priceNumeric": 3600000,
+    "image": "/images/ring_jewelry.png",
+    "category": "Rings",
+    "material": "Silver",
+    "dateAdded": 1719000000
+  }
+]

@@ -2,56 +2,51 @@ import Image from "next/image";
 
 export default function StorySection() {
   return (
-    <section className="bg-[#F3EFEA] py-32 mt-12">
-      <div className="px-8 max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
-        <div className="relative order-2 md:order-1 h-[700px]">
-          <div className="relative w-full h-full rounded-[2rem] overflow-hidden shadow-2xl">
-            <Image
-              src="/images/bowls_of_beads.png"
-              alt="Bowls of Beads"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
+    <section className="bg-white pb-12 md:pb-16 pt-0">
+      <div className="px-4 md:px-8 max-w-7xl mx-auto space-y-16 md:space-y-20">
+        
+        {/* Top Text Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+          {/* Left Large Headline */}
+          <div>
+            <h2 className="font-sans text-4xl md:text-5xl leading-[1.2] tracking-tight text-[#2B2724] font-medium whitespace-nowrap">
+              Focusing on heritage, <span className="text-stone-400 font-normal">we</span> <br />
+              <span className="text-stone-400 font-normal">preserve artisan crafts</span>
+            </h2>
           </div>
-          <div className="absolute -top-8 -right-8 w-32 h-32 bg-[#8b654b] rounded-full flex items-center justify-center text-white font-serif italic text-lg shadow-xl ring-8 ring-[#F3EFEA] z-10">
-            Since 2024
-          </div>
-        </div>
-        <div className="space-y-8 order-1 md:order-2 pl-4">
-          <h3 className="text-[13px] font-bold tracking-[0.15em] uppercase text-stone-500">
-            Our Story
-          </h3>
-          <h2 className="font-serif text-[clamp(2rem,3.5vw+1rem,3.5rem)] text-[#8b654b] leading-[1.15]">
-            Every bead holds a story... no such thing as a mistake, only{" "}
-            <span className="italic underline decoration-1 underline-offset-[12px]">
-              unique creations.
-            </span>
-          </h2>
-          <div className="space-y-6 text-stone-600 text-lg leading-[1.6] max-w-[60ch]">
-            <p>
-              Morii is the realization of a fleeting moment captured in stone. We
-              believe that perfection is found in the organic variance of the earth.
-            </p>
-            <p>
-              Each piece is hand-assembled in our Denpasar atelier, using locally
-              repurposed offcut stones and traditional Balinese metal smiths and
-              weavers. When a bead falls slightly out of alignment, we see a path
-              to a new, unexpected beauty.
+          {/* Right Paragraph */}
+          <div className="md:pl-8">
+            <p className="text-stone-500 text-[14px] md:text-[15px] leading-[1.7] max-w-md font-light">
+              We ensure that every bead we carve meets strict quality checks. Sustainable solutions for an environmentally friendly and timeless future, preserving the soul of Balinese craftsmanship.
             </p>
           </div>
-          <div className="flex flex-wrap gap-4 pt-6">
-            <span className="bg-[#D4E8DC] text-[#3D5A4D] px-5 py-2.5 rounded-full text-sm font-medium tracking-wide">
-              Recycled Glass
-            </span>
-            <span className="bg-[#D4E8DC] text-[#3D5A4D] px-5 py-2.5 rounded-full text-sm font-medium tracking-wide">
-              Sandalwood
-            </span>
-            <span className="bg-[#D4E8DC] text-[#3D5A4D] px-5 py-2.5 rounded-full text-sm font-medium tracking-wide">
-              Sea Shell
-            </span>
-          </div>
         </div>
+
+        {/* Bottom Circles (Core Materials) */}
+        <div className="flex flex-wrap md:flex-nowrap justify-center md:justify-between items-center gap-6 md:gap-4">
+          
+          <div className="w-32 h-32 md:w-48 md:h-48 rounded-full bg-white shadow-xl shadow-stone-200/50 border border-stone-100 flex items-center justify-center shrink-0 hover:-translate-y-2 transition-transform duration-500 cursor-pointer">
+             <span className="font-sans font-bold text-[11px] md:text-[13px] tracking-[0.2em] text-[#2B2724] uppercase text-center leading-tight">18K<br/>Gold</span>
+          </div>
+
+          <div className="w-32 h-32 md:w-48 md:h-48 rounded-full bg-[#F7F7F6] hover:bg-[#EBE9E4] flex items-center justify-center shrink-0 transition-colors duration-500 cursor-pointer">
+             <span className="font-sans font-bold text-[11px] md:text-[13px] tracking-[0.2em] text-[#2B2724] uppercase text-center leading-tight">925<br/>Silver</span>
+          </div>
+
+          <div className="w-32 h-32 md:w-48 md:h-48 rounded-full bg-[#F7F7F6] hover:bg-[#EBE9E4] flex items-center justify-center shrink-0 transition-colors duration-500 cursor-pointer">
+             <span className="font-sans font-bold text-[11px] md:text-[13px] tracking-[0.2em] text-[#2B2724] uppercase text-center leading-tight">Volcanic<br/>Stone</span>
+          </div>
+
+          <div className="w-32 h-32 md:w-48 md:h-48 rounded-full bg-[#F7F7F6] hover:bg-[#EBE9E4] flex items-center justify-center shrink-0 transition-colors duration-500 cursor-pointer">
+             <span className="font-sans font-bold text-[11px] md:text-[13px] tracking-[0.2em] text-[#2B2724] uppercase text-center leading-tight">Sea<br/>Shell</span>
+          </div>
+
+          <div className="w-32 h-32 md:w-48 md:h-48 rounded-full bg-[#F7F7F6] hover:bg-[#EBE9E4] flex items-center justify-center shrink-0 transition-colors duration-500 cursor-pointer">
+             <span className="font-sans font-bold text-[11px] md:text-[13px] tracking-[0.2em] text-[#2B2724] uppercase text-center leading-tight">Sandal<br/>Wood</span>
+          </div>
+
+        </div>
+
       </div>
     </section>
   );

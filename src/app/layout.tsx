@@ -29,7 +29,7 @@ export default function RootLayout({
       lang="en"
       className={`${jakarta.variable} ${playfair.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans text-stone-800 bg-[#FAF9F6] selection:bg-stone-800 selection:text-white">
+      <body className="min-h-full flex flex-col font-sans text-stone-800 bg-white selection:bg-stone-800 selection:text-white">
         <Navbar />
         {children}
         <Footer />
