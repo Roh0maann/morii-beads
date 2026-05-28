@@ -19,16 +19,16 @@ export default function StorySection() {
           </div>
         </div>
         <div className="space-y-8 order-1 md:order-2 pl-4">
-          <h3 className="text-xs font-bold tracking-[0.2em] uppercase text-stone-500">
+          <h3 className="text-[13px] font-bold tracking-[0.15em] uppercase text-stone-500">
             Our Story
           </h3>
-          <h2 className="font-serif text-5xl md:text-6xl text-[#8b654b] leading-[1.15]">
+          <h2 className="font-serif text-[clamp(2rem,3.5vw+1rem,3.5rem)] text-[#8b654b] leading-[1.15]">
             Every bead holds a story... no such thing as a mistake, only{" "}
             <span className="italic underline decoration-1 underline-offset-[12px]">
               unique creations.
             </span>
           </h2>
-          <div className="space-y-6 text-stone-600 text-lg leading-relaxed">
+          <div className="space-y-6 text-stone-600 text-lg leading-[1.6] max-w-[60ch]">
             <p>
               Morii is the realization of a fleeting moment captured in stone. We
               believe that perfection is found in the organic variance of the earth.

@@ -8,10 +8,10 @@ export default function Footer() {
         <div className="grid md:grid-cols-[1fr_1.5fr] gap-16 mb-24 items-center">
           <div className="space-y-12">
             <div className="space-y-3">
-              <h3 className="text-xs font-bold tracking-[0.2em] uppercase text-stone-500">
+              <h3 className="text-[13px] font-bold tracking-[0.15em] uppercase text-stone-500">
                 Visit Us
               </h3>
-              <h2 className="font-serif text-4xl text-[#8b654b]">
+              <h2 className="font-serif text-[clamp(1.75rem,2.5vw+0.5rem,2.25rem)] leading-[1.2] text-[#8b654b]">
                 The Atelier Experience
               </h2>
             </div>
@@ -34,10 +34,10 @@ export default function Footer() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-bold text-stone-800 text-lg mb-1">
+                  <h4 className="font-bold text-stone-800 text-lg leading-[1.3] mb-1">
                     Denpasar, Bali
                   </h4>
-                  <p className="text-stone-500 leading-relaxed">
+                  <p className="text-stone-500 leading-[1.6]">
                     Jl. Raya Seminyak No. 45, North Kuta
                   </p>
                 </div>
@@ -60,13 +60,13 @@ export default function Footer() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-bold text-stone-800 text-lg mb-1">
+                  <h4 className="font-bold text-stone-800 text-lg leading-[1.3] mb-1">
                     Weekend Hours
                   </h4>
-                  <p className="text-stone-500 leading-relaxed mb-2">
+                  <p className="text-stone-500 leading-[1.6] mb-2">
                     Saturday - Sunday: 10:00 - 18:00
                   </p>
-                  <p className="text-stone-400 text-sm italic">
+                  <p className="text-stone-500 text-sm italic">
                     *Weekdays by Private Appointment Only
                   </p>
                 </div>
@@ -87,16 +87,19 @@ export default function Footer() {
 
         <div className="pt-12 border-t border-stone-200 flex flex-col lg:flex-row justify-between items-start lg:items-end gap-12">
           <div className="max-w-xs space-y-4">
-            <div className="font-serif text-2xl font-bold text-[#8A634B]">
+            <Link
+              href="/"
+              className="font-serif text-2xl font-bold text-[#8A634B] hover:opacity-80 transition block"
+            >
               Morii Beads
-            </div>
-            <p className="text-sm text-stone-500 leading-relaxed">
+            </Link>
+            <p className="text-[15px] text-stone-500 leading-[1.6]">
               Preserving the soul of handmade jewelry through intentional design
               and Balinese craftsmanship.
             </p>
           </div>
 
-          <div className="flex gap-20 text-sm text-stone-600 font-medium">
+          <div className="flex gap-16 text-[15px] text-stone-600 font-medium">
             <div className="flex flex-col gap-4">
               <Link href="#" className="hover:text-stone-900 transition">
                 Find retailers
@@ -117,7 +120,7 @@ export default function Footer() {
 
           <div className="flex flex-col items-end space-y-6">
             <div className="flex gap-6 justify-end text-stone-400">
-              <Link href="#" className="hover:text-stone-800 transition">
+              <Link href="#" className="hover:text-stone-800 transition p-1">
                 <span className="sr-only">Facebook</span>
                 <svg
                   width="22"
@@ -132,7 +135,7 @@ export default function Footer() {
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                 </svg>
               </Link>
-              <Link href="#" className="hover:text-stone-800 transition">
+              <Link href="#" className="hover:text-stone-800 transition p-1">
                 <span className="sr-only">Instagram</span>
                 <svg
                   width="22"
@@ -149,7 +152,7 @@ export default function Footer() {
                   <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                 </svg>
               </Link>
-              <Link href="#" className="hover:text-stone-800 transition">
+              <Link href="#" className="hover:text-stone-800 transition p-1">
                 <span className="sr-only">Mail</span>
                 <svg
                   width="22"
@@ -166,7 +169,7 @@ export default function Footer() {
                 </svg>
               </Link>
             </div>
-            <p className="text-xs text-stone-400">
+            <p className="text-xs text-stone-500">
               © 2024 Morii Beads | Denpasar, Bali. Weekend Hours: 10AM - 6PM.
             </p>
           </div>

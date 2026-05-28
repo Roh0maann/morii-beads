@@ -4,10 +4,13 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 w-full bg-[#FAF9F6]/90 backdrop-blur-md z-50 border-b border-stone-200/50">
       <div className="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
-        <div className="font-serif text-2xl font-bold tracking-tight text-[#8A634B]">
+        <Link
+          href="/"
+          className="font-serif text-2xl font-bold tracking-tight text-[#8A634B] hover:opacity-80 transition"
+        >
           Morii Beads
-        </div>
-        <div className="hidden md:flex space-x-12 text-xs uppercase tracking-[0.15em] text-stone-500 font-semibold">
+        </Link>
+        <div className="hidden md:flex space-x-10 text-[13px] uppercase tracking-[0.12em] text-stone-600 font-semibold">
           <Link href="#" className="hover:text-stone-800 transition">
             Collections
           </Link>
@@ -21,8 +24,11 @@ export default function Navbar() {
             Sustainability
           </Link>
         </div>
-        <div className="flex space-x-6 text-stone-600">
-          <button aria-label="Search or Bag" className="hover:text-stone-900 transition">
+        <div className="flex items-center space-x-6 text-stone-600">
+          <button
+            aria-label="Shopping Bag"
+            className="p-2 hover:text-stone-900 transition"
+          >
             <svg
               width="20"
               height="20"
@@ -38,7 +44,10 @@ export default function Navbar() {
               <path d="M16 10a4 4 0 0 1-8 0"></path>
             </svg>
           </button>
-          <button aria-label="User Profile" className="hover:text-stone-900 transition">
+          <button
+            aria-label="User Profile"
+            className="p-2 hover:text-stone-900 transition"
+          >
             <svg
               width="20"
               height="20"
